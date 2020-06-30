@@ -1,0 +1,24 @@
+import operator
+while(1):
+    x = int(input("Enter First No:"))
+    y=int(input("Enter Second No:"))
+    ch=input("Enter Choice +, -, *, /, **, % :")
+    if(ch=="+"):
+        r=operator.add(x,y)
+        print("Result:",r)
+    elif(ch=="-"):
+        print("Result:",x-y)
+    elif(ch=="*"):
+        r=x*y
+        print("Result:",r)
+    elif(ch=="/"):
+        r=x/y
+        print("Result:",r)
+    elif(ch=="**"):
+        r=operator.pow(x,y)
+        print("Result:", r)
+    elif(ch=="%"):
+        r=x%y
+        print("Result:", r)
+    else:
+        print("Incorrect Choice")
